@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html>
+    <head> 
+        <title>HTML Cheat Sheet</title> <!-- HTML = Hyper Text Markup Language -->
+    </head>
+    <body>
+        <a href="blog.html">Go to blog</a> <!-- href is for the links --> <!-- brings the user to the blog page -->
+        <!-- Headings -->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+
+        <!-- Paragraph -->
+        <p>
+            <!-- Lorem (tab) inserts a lorem ipsum paragraph --> Lorem ipsum dolor sit amet <strong>consectetur</strong> tronmgs adipisicing elit. At illo impedit laborum, ex repellat pariatur ipsa debitis <em>magni</em> <!-- Emphasis/italicize --> officiis velit quae quaerat quis enim consectetur rem molestiae placeat, sunt soluta.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href = "http://google.com" target = "_blank">Fugit ut unde</a> porro laudantium nesciunt debitis sint aut, deleniti sequi fugiat fuga animi nisi, in placeat molestiae quos exercitationem corporis deserunt!</p>
+         <!-- Lists -->
+         <ul> <!-- unordered list -->
+             <li>List Item 1</li>
+             <li>List Item 2</li>
+             <li>List Item 3</li>
+             <li>List Item 4</li>
+         </ul>
+
+         <ol> <!-- orddered list -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ol>
+
+        <!-- Table -->
+        <table>
+            <thead> <!-- table header -->
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jeric Mariano</td>
+                    <td>jericmariano08@gmail.com</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Lebron James</td>
+                    <td>lebron@gmail.com</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>Michael Jackson</td>
+                    <td>michaeljack@gmail.com</td>
+                    <td>32</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <br> <!-- like a line skip --> 
+        <hr> <!-- horizontal rule; line that goes across page -->
+        <br> <!-- line skip -->
+
+        <!-- Forms -->
+        <form action="process.php" method = "POST">
+            <div> 
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="Enter first name">
+            </div>
+            <br>
+            <div>
+            <label>Last Name</label>
+            <input type="text" name="lastName">
+            </div>
+            <br>
+            <div>
+            <label>Email</label>
+            <input type="email" name="email"> <!-- input type email checks if its a valid email -->
+            </div>
+            <br>
+            <div>
+            <label>Message</label>
+            <textarea name="message"></textarea> <!-- message box -->
+            </div>
+            <br>
+            <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="male">Female</option>
+                <option value="male">Other</option>
+            </select>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name = "age" value="30">
+            </div>
+            <br>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <input type="submit" name="submit" value = "Submit">
+        </form>
+        <!-- Button -->
+        <button>Click Me</button> <!-- won't do anything -->
+        <br>
+        <!-- Image -->
+        <a href = "sample.jpg">
+        <img src = "sample.jpg" alt = "My Sample Image" width ="200"> <!-- alt if the image doesn't load -->
+        </a>   
+        
+        <!-- Quotations -->
+        <blockquote cite = "https://google.com"> <!-- where the quote comes from -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sequi tempora officia sed velit voluptates quo quam sunt aspernatur, aut itaque, a voluptatibus similique exercitationem est ipsa nisi ex obcaecati!
+        </blockquote>
+
+        <p>The <abbr  title ="World Wide Web">WWW</abbr> is awesome</p> <!-- abbreviation, shows the actual phrase when mouse hovers over -->
+        <p> <cite>HTML by</cite> Jeric Mariano</p>
+    </body>
+
+    <!-- 
+    
+        inline elements
+    * do not start on a new line
+    * take only the necessary width
+    <span>, <img>, <a>
+
+        block elements
+    * start on a new line
+    * take full width available
+    
+        tag attributes
+    * all tags can have attributes
+    * provide info about an element
+    * placed within the start tag
+    * key/value pairs (id = "someId")
+    -->
+</html>
